@@ -1,0 +1,74 @@
+body {
+	background: skyblue;
+}
+
+.contenedor {
+	margin: 0 auto;
+	width: 600px;
+	font-family: sans-serif;
+}
+
+.caja {
+	width: 200px;
+	height: 200px;
+	border: 1px solid red;
+}
+
+.contenedor img {
+	width: 186px;
+	height: 60px;
+}
+
+.transicion {
+	transition: .3s ease; /* https://matthewlein.com/tools/ceaser */
+}
+
+.opacidad {
+	opacity: 0;
+}
+.opacidad:hover {
+	opacity: 1;
+}
+
+.fuente {
+	font-size: 16px;
+	font-weight: 400;
+}
+.fuente:hover {
+	font-size: 20px;
+	font-weight: 600;
+}
+
+.colores {
+	color: inherit;
+	background-color: inherit;
+}
+.colores:hover {
+	color: red;
+	background-color: yellow;
+}
+
+.rotacion:hover {
+	transform: rotate(360deg);
+}
+
+.escala:hover {
+	transform: scale(2);
+}
+
+.sesgado:hover {
+	transform: skew(45deg);
+}
+
+body {
+	perspective: 1000px; /* Para que tome el translate en el eje Z. */
+}
+
+.traslacion:hover {
+	transform: translate(50px, 50px);
+	transform: translateZ(50px);
+}
+
+.mixtas:hover {
+	transform: rotate(45deg) scale(2) skew(45deg) translateX(50px);
+}
